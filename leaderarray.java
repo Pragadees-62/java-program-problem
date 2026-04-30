@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.*;
 public class leaderarray {
     void leader(int[] arr,int num){
@@ -16,14 +17,15 @@ public class leaderarray {
     }
     void rightmovement(int[] arr,int num){
         int right=num-1;
-        StringBuilder st=new StringBuilder();
+        ArrayList<Integer> st=new ArrayList<>();
+        st.add(arr[right]);
         for(int i=num-1;i>=0;i--){
             if(arr[i]>=right){
-                st.append(arr[i]+" ");
+                st.add(arr[i]);
                 right=arr[i];
             }
         }
-        System.out.print(st.reverse());
+        System.out.print(st.reversed());
     }
     
     public static void main(String[] args) {

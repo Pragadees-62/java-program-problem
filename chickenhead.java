@@ -1,25 +1,18 @@
 import java.util.*;
 public class chickenhead {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int leg=sc.nextInt();
-        int head=sc.nextInt();
-        int chicken=0;
-        int rabbit=0;
-        int balance=0;
-        if(leg%4==0){
-            rabbit=leg/4;
-            balance=leg%4;
-            chicken=0;
-        }
-        else{
-            chicken=(balance/2);
-        }
-        if(chicken+rabbit==head){
-            System.out.println(chicken+" "+rabbit);
-        }
-        else{
-            System.out.println((chicken+rabbit));
+        Scanner sc = new Scanner(System.in);
+        int leg = sc.nextInt();
+        int head = sc.nextInt();
+
+        int rabbit = (leg - 2 * head) / 2;
+        int chicken = head - rabbit;
+
+        if (leg % 2 != 0 || head < 1  )  {
+            System.out.println("Invalid input");
+        } else {
+            System.out.println("Chicken head: "+chicken);
+            System.out.println("Rabbit head: "+rabbit);
         }
     }
 }
