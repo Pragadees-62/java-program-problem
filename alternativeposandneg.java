@@ -34,7 +34,6 @@ public class alternativeposandneg {
         while(j<n){
             System.out.print(neg[j]+" ");
             j++;
-        }
-        
+        }   
     }
 }
