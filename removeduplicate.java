@@ -7,11 +7,13 @@ public class removeduplicate{
         for(int i=0;i<size;i++){
             arr[i]=s.nextInt();
         }
-        while(arr[i]!=null){
-            if(arr[i]==0){
-                arr[i]=arr[size-1];
-            }
+        HashSet<Integer> set=new HashSet<>();
+        for(int i=0;i<size;i++){
+            set.add(arr[i]);
+        }  
+        for(int num:set){
+                System.out.print(num+" ");
         }
-        System.out.print(arr[i]);
+
     }
 }
