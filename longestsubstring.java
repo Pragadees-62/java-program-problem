@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class longestsubstring {
-    public static String Uniquesubstring(String s) {
+    static String Uniquesubstring(String s) {
         HashMap<Character, Integer> map = new HashMap<>();
         int start = 0, maxLen = 0, startIndex = 0;
 
@@ -23,10 +23,10 @@ public class longestsubstring {
 
         return s.substring(startIndex, startIndex + maxLen);
     }
-
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         String input = sc.next();
+        // longestsubstring obj = new longestsubstring();
         String result = Uniquesubstring(input);
         System.out.println(result);
     }

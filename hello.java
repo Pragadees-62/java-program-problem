@@ -1,3 +1,4 @@
+import java.util.*;
 class World{
     int id;
     String name;
@@ -20,7 +21,8 @@ class World{
 }
 class hello {
     public static void main(String[] args) {
-        World obj= new World(37,"Pragadees");
+        Scanner sc=new Scanner(System.in);
+        World obj= new World(sc.nextInt(),sc.next());
         obj.display();
         World.fun();
     }
