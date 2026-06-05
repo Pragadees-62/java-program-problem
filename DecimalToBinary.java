@@ -10,7 +10,6 @@ public class DecimalToBinary {
             binary = (num % 2) + binary;
             num = num / 2;
         }
-
         System.out.println(binary);
     }
 }
