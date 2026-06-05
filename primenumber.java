@@ -27,6 +27,7 @@ class summa{
             }
             if(p){
                 System.out.print(i+" ");
+
             }
         }
     }
@@ -38,6 +39,5 @@ public class primenumber {
         summa obj=new summa();
         System.out.println(obj.countnumber(num));
         obj.variable(num);
-        
     }
 }
