@@ -2,7 +2,6 @@ import java.util.*;
 class movezero{
     void right(int[] arr,int size){
         int j = 0; 
-        
         for(int i = 0; i < size; i++){
             if(arr[i] != 0){
                 int temp = arr[i];
