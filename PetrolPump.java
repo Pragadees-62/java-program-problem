@@ -15,7 +15,7 @@ class PetrolPump {
                 tank = 0;
             }
         }
-        return (total >= 0) ? start : -1;
+        return (total >= 0) ? start :-1;
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
